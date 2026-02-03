@@ -1,0 +1,6 @@
+import { Hono } from "npm:hono";
+import { cors } from "npm:hono/cors";
+// ...
+const app = new Hono();
+// ...
+Deno.serve(app.fetch);
